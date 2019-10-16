@@ -20,5 +20,5 @@ COPY . .
 
 RUN yarn install
 
-CMD yarn install && yarn start
+CMD yarn start
 
