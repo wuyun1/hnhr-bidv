@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: hnhr
-  namespace: hzero
+  namespace: default
 spec:
   selector:
     app: hnhr
@@ -16,7 +16,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hnhr
-  namespace: hzero
+  namespace: default
   labels:
     app: hnhr
 spec:
@@ -40,7 +40,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  namespace: hzero
+  namespace: default
   generation: 1
   name: hnhr
 spec:
