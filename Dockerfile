@@ -18,7 +18,7 @@ EXPOSE 8586
 WORKDIR /app
 COPY . .
 
-RUN yarn install
+# RUN yarn install
 
-CMD yarn start
+CMD yarn install && yarn start
 
