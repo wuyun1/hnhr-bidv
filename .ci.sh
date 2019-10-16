@@ -65,4 +65,4 @@ spec:
           servicePort: 8586
 EOF
 
-# kubectl apply -f _deployment.yaml
+kubectl apply -f _deployment.yaml
